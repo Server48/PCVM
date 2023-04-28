@@ -128,7 +128,7 @@ public abstract class OnlyAudioBase implements GetAacData, GetMicrophoneData {
   public boolean prepareAudio(int bitrate, int sampleRate, boolean isStereo, boolean echoCanceler,
       boolean noiseSuppressor) {
     
-    return prepareAudio(MediaRecorder.AudioSource.VOICE_CALL,bitrate, sampleRate, isStereo, echoCanceler,
+    return prepareAudio(MediaRecorder.AudioSource.MIC,bitrate, sampleRate, isStereo, echoCanceler,
         noiseSuppressor);
   }
 
