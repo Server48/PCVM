@@ -76,7 +76,7 @@ public class MicrophoneManager {
   public boolean createMicrophone(int sampleRate, boolean isStereo, boolean echoCanceler,
       boolean noiseSuppressor) {
     Log.i(TAG, "FFFFFFFFFF");
-    return createMicrophone(MediaRecorder.AudioSource.VOICE_CALL, sampleRate, isStereo, echoCanceler,
+    return createMicrophone(MediaRecorder.AudioSource.MIC, sampleRate, isStereo, echoCanceler,
         noiseSuppressor);
   }
 
