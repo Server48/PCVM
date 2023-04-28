@@ -66,7 +66,7 @@ public class MicrophoneManager {
    * Create audio record
    */
   public void createMicrophone() {
-    createMicrophone(sampleRate, true, false, false);
+    createMicrophone(sampleRate, false, false, false);
     Log.i(TAG, "Microphone created, " + sampleRate + "hz, Stereo");
   }
 
