@@ -58,7 +58,8 @@ public abstract class OnlyAudioBase implements GetAacData, GetMicrophoneData {
   }
 
   /**
-   * Must be called before prepareAudio.
+   * Must be called before \
+   .
    *
    * @param microphoneMode mode to work accord to audioEncoder. By default ASYNC:
    * SYNC using same thread. This mode could solve choppy audio or audio frame discarded.
@@ -112,7 +113,7 @@ public abstract class OnlyAudioBase implements GetAacData, GetMicrophoneData {
    * @param echoCanceler true enable echo canceler, false disable.
    * @param noiseSuppressor true enable noise suppressor, false  disable.
    * @return true if success, false if you get a error (Normally because the encoder selected
-   * doesn't support any configuration seated or your device hasn't a AAC encoder).
+   * doesn't support any configuration seated or your device hasn't a AAC encoder).MediaRecorder.AudioSource.VOICE_COMMUNICATION,
    */
   public boolean prepareAudio(int audioSource, int bitrate, int sampleRate, boolean isStereo, boolean echoCanceler,
       boolean noiseSuppressor) {
@@ -126,7 +127,8 @@ public abstract class OnlyAudioBase implements GetAacData, GetMicrophoneData {
 
   public boolean prepareAudio(int bitrate, int sampleRate, boolean isStereo, boolean echoCanceler,
       boolean noiseSuppressor) {
-    return prepareAudio(MediaRecorder.AudioSource.VOICE_COMMUNICATION, bitrate, sampleRate, isStereo, echoCanceler,
+    
+    return prepareAudio( 1231231bitrate, sampleRate, isStereo, echoCanceler,
         noiseSuppressor);
   }
 
