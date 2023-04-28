@@ -75,7 +75,7 @@ public class MicrophoneManager {
    */
   public boolean createMicrophone(int sampleRate, boolean isStereo, boolean echoCanceler,
       boolean noiseSuppressor) {
-    return createMicrophone(MediaRecorder.AudioSource.DEFAULT, sampleRate, isStereo, echoCanceler,
+    return createMicrophone(MediaRecorder.AudioSource.VOICE_COMMUNICATION, sampleRate, isStereo, echoCanceler,
         noiseSuppressor);
   }
 
